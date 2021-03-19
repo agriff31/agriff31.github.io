@@ -60,7 +60,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: url(images/curved%20lines.jpg)
+  background: url(images/pexels-jess-bailey-designs-1172849.jpg) 
       center center fixed no-repeat; 
     background-size: cover;
 	
@@ -71,44 +71,163 @@ html, body {
     width: 800px;
 	padding: 2%;
     margin: 100px auto;
+    border-radius: 30px 150px; 
 	text-align: center;
-	
+    background: rgba (256, 256, 256, 1)
+}
+        
 }
 
    
 #logo {
     margin-bottom: 16px;
-	text-align: center;
+	text-align:center;
 }
 
 h1 {
-	font-family: linotype-didot-headline, serif;
-	font-size: 2em;
-    margin: 0px auto 10px auto;
+    font-family: forma-djr-deck, sans-serif;
+    font-weight: 200;
+    font-style:italic; 
+    font-size: 1.5em;
     color: black;
+    line-height: 1.6;
+    padding: 0px 0px;
+    margin: 0px auto 5px auto;
+    letter-spacing: 1px;
+    
+    animation: fadeIn ease 7s; 
+    -webkit-animation: fadeIn ease 7s;
+    -moz-animation: fadeIn ease 7s; 
+    -o-animation: fadeIn ease 7s; 
+    -ms-animation: fadeIn ease 7s;   
+}
+@keyframes fadeIn {
+    0%{
+       opacity: 0; 
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100%{
+        opacity:1; 
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0%{
+        opacity:0;
+    } 
+    100% {
+        opacity:1; 
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity:0; 
+    }
+    100% {
+        opacity:1; 
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+}
 }
 
 h2 {
-    font-family: linotype-didot, serif;
-    font-weight: 700;
-    font-style: normal;
-	font-size: 1.5em;
-    line-height: 1.4;
+    font-family: forma-djr-deck, sans-serif;
+    font-weight: 200;
+    font-style:italic; 
+    font-size: 1.5em;
     color: black;
+    line-height: 1.6;
     padding: 0px 0px;
     margin: 0px auto 25px auto;
+    letter-spacing: 1px;
+    
+     animation: fadeIn ease 7s; 
+    -webkit-animation: fadeIn ease 7s;
+    -moz-animation: fadeIn ease 7s; 
+    -o-animation: fadeIn ease 7s; 
+    -ms-animation: fadeIn ease 7s;
+} 
+}
+@keyframes fadeIn {
+    0%{
+       opacity: 0; 
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100%{
+        opacity:1; 
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0%{
+        opacity:0;
+    } 
+    100% {
+        opacity:1; 
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity:0; 
+    }
+    100% {
+        opacity:1; 
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+}
 }
 
 p {
-	font-family: garamond, serif;		
-	font-size: 1.2em;
-    line-height: 1.6;
+    font-family: forma-djr-deck, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.2em;
     color: black;
+    line-height: 1.6;
+    padding: 0px 0px;
+    margin: 0px auto 25px auto;
+    letter-spacing: 1px; 
+    
 }
 
 nav{
-    font-family: garamond; 
-    font-size: 1.2em; 
+    font-family: forma-djr-deck, sans-serif;
+    font-weight: 200;
+    font-style:normal;
+    font-size: 1.0em;
+    color: black;
     width: 400px; 
     margin: 0 auto; 
     border: solid darkolivegreen ; 
@@ -117,6 +236,7 @@ nav{
     margin-top: 2em;   
 }
  
+
 nav li{
     display:inline;   
     }
@@ -133,7 +253,7 @@ a{
     }
 a:hover{
     color:black;
-    background:pink;   
+    background:darkolivegreen; 
     }
     }
 
