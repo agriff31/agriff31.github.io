@@ -113,7 +113,6 @@ section.tertiary {
 
     aside {
         grid-column: 2/3;
-        display: grid; 
     }
 
     main{
@@ -126,7 +125,7 @@ section.tertiary {
 
     section.main{
         grid-column: 2/4;
-        grid-row: 1/3;
+        grid-row: 1/2;
         display: flex;
         flex-direction: column;
     }
