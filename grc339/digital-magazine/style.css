@@ -166,7 +166,7 @@ textarea {
     }
     
     figcaption.photogallery {
-        font-size: 1.2em;
+        font-size: 20pt;
         font-weight: bold;
         margin: 1em 0;
         color: #888;
@@ -200,6 +200,16 @@ textarea {
 
     input {
         margin-bottom:5em;
+    }
+
+    body.subscribe {
+
+        background-color:rgb(255,247,250);
+        color: rgb(82,118,83);
+        line-height: 100%;
+        font-family: fino-sans, sans-serif;
+        font-weight: 900;
+        font-style: normal; 
     }
 
 
