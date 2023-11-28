@@ -26,6 +26,7 @@ h1{
     font-family: fino-sans, sans-serif;
     font-weight: 700;
     font-style: normal;
+    width: 10em;
 }
 
 figure {
@@ -166,7 +167,7 @@ textarea {
     }
     
     figcaption.photogallery {
-        font-size: 20pt;
+        font-size: 10.5pt;
         font-weight: bold;
         margin: 1em 0;
         color: #888;
@@ -277,4 +278,37 @@ main.photogallery{
     }
 }
 
+@media screen and (prefers-color-scheme: dark) {
 
+    body {
+        background-color: rgb(84,84,84);  
+        color: rgb(238, 238, 238);
+    }
+
+    h1 {  
+        background-image: url("tasty bites.svg");  
+        background-repeat: no-repeat;  
+        background-size: contain;  
+        max-width: 10em;
+        }  
+  h1 img {  
+     opacity: 0;
+        }  
+h3 {
+    background-color: rgb(84,84,84);  
+     color: rgb(143, 191, 145);
+        }
+
+div.container {
+    max-width: 80em;
+    margin: 0 auto;
+    background-color:rgb(84,84,84);
+             }
+p{
+    color: rgb(238, 238, 238);
+}
+nav ul {
+    background-color: rgb(84,84,84);  
+    color: rgb(248, 162, 103);
+}
+}
