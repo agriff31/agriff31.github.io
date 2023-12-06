@@ -124,7 +124,7 @@ figcaption {
     font-family: "greycliff-cf", sans-serif;
     font-variation-settings: "wght" 400;
     font-style: normal;
-    font-size: 10.5pt; 
+    font-size: 20em; 
     margin-bottom: 2em;
 }
 
@@ -200,7 +200,6 @@ textarea {
     figcaption.photogallery {
         font-size: 20em;
         font-weight: bold;
-        margin: 1em 0;
         color: rgb(82,118,83);
     }
     
