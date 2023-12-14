@@ -1,0 +1,387 @@
+body {
+    background-color:rgb(255,247,250);
+    color: rgb(82,118,83);
+    line-height: 140%;
+    font-family: fino-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+div.container {
+    max-width: 80em;
+    margin: 0 auto;
+    background-color:rgb(255,247,250);
+}
+
+section{
+    max-width:40em;
+    margin: 0 auto;
+}
+h1{
+    max-width: 30%;
+    color: rgb(82,118,83);
+    line-height: 140%;
+    font-family: fino-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    width: 10em;
+}
+
+h4{
+    background-color:rgb(255,247,250);
+    color: rgb(236,96,1);
+    font-family: "fino-sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+figure {
+    margin: 0;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+img {
+    width: 100%; 
+}
+
+nav ul{
+    padding: 0; 
+    font-family: fino-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    
+}
+
+
+nav ul li{
+    display: inline; 
+    text-align: center;
+    padding: 0; 
+    font-family: fino-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding-right: 0.5em;
+
+}
+
+ul{
+    list-style-type: none;
+    padding: 0; 
+   
+   
+}
+
+li {
+    font-family: greycliff-cf, sans-serif; 
+    font-variation-settings: "wght" 400;
+    font-style: normal;  
+    color: black;
+}
+
+p{
+    font-family: greycliff-cf, sans-serif; 
+    font-variation-settings: "wght" 400;
+    font-style: normal;  
+    color: black;
+
+}
+
+footer{
+    background-color: rgb(82,118,83);
+    padding: 0.2em; 
+    font-family:"greycliff-cf", sans-serif;
+    font-weight: 300;
+    font-style:normal; 
+    margin-top:2em;
+    grid-column: 1/3;
+}
+
+footer p{
+    color:rgb(238, 238, 238);
+    margin: 0.5em;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(236,96,1);
+}
+
+a:hover{
+    color: rgb(236,96,1);
+}
+
+
+
+h3 {
+    background-color:rgb(255,247,250);
+    color: rgb(82,118,83);
+    font-family: "fino-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+figcaption {
+    font-family: "greycliff-cf", sans-serif;
+    font-variation-settings: "wght" 400;
+    font-style: normal;
+    font-size: 1rem; 
+    margin-bottom: 2em;
+}
+
+
+
+figure {
+    margin: 0;
+}
+
+section.tertiary {
+    border-top: 1px #222 solid;
+}
+
+section.personal-info ul li {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
+	
+}
+
+section.personal-info ul li input[type="text"],
+section ul li input[type="email"],
+section ul li input[type="tel"],
+section ul li select {
+	flex: 4 0 32em;
+	box-sizing: border-box;
+}
+
+section.personal-info ul li label {
+	flex: 0 0 8em;
+}
+
+section.order ul, section.method ul {
+	display: flex;
+	flex-wrap: wrap;
+	}
+
+section.order ul li , section.method ul li {
+	flex: 1 0 15em;
+	}
+
+textarea {
+	box-sizing: border-box;
+	display: block;
+	width: 90%;
+	height: 6em;
+    background-color:rgb(255,247,250);
+	padding: 0.4em;
+	font-family: grey-cliff, sans-serif;
+	}
+
+
+    
+    main.photogallery {
+        position:relative;
+        overflow:hidden;
+        grid-column: 1/3; 
+        padding-bottom: calc(120% + 2em);
+        margin-top: 1em;
+        max-width:60em;
+    }
+
+    
+    main.photogallery input{
+     display: none;
+    }
+
+    figure.photogallery {
+        margin: 0;
+        width: 100%;
+        position:absolute;
+        opacity:0;
+        transition: opacity 0.5s;
+    }
+    
+    figcaption.photogallery {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 1em 0;
+        color: #888;
+    }
+    
+    
+    input:nth-of-type(1):checked ~  figure.photogallery:nth-of-type(1),
+    input:nth-of-type(2):checked ~  figure.photogallery:nth-of-type(2),
+    input:nth-of-type(3):checked ~  figure.photogallery:nth-of-type(3),
+    input:nth-of-type(4):checked ~  figure.photogallery:nth-of-type(4),
+    input:nth-of-type(5):checked ~  figure.photogallery:nth-of-type(5),
+    input:nth-of-type(6):checked ~  figure.photogallery:nth-of-type(6),
+    input:nth-of-type(7):checked ~  figure.photogallery:nth-of-type(7),
+    input:nth-of-type(8):checked ~  figure.photogallery:nth-of-type(8){
+        opacity: 1;
+    }
+    
+    nav.photogallery {
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-gap: 0.2em;
+        max-width: 60em; 
+        grid-column: 1/4;
+
+    }
+
+
+    img.photogallery {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+    
+
+    input {
+        margin-bottom:5em;
+    }
+
+    body.subscribe {
+
+        background-color:rgb(255,247,250);
+        color: rgb(82,118,83);
+        line-height: 100%;
+        font-family: fino-sans, sans-serif;
+        font-weight: 900;
+        font-style: normal; 
+    }
+
+
+@media only screen and (min-width:60em) {
+	
+    div.container{
+        grid-column:1/2;
+        display: grid; 
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 0 1em;
+    }
+
+    header {
+        grid-column: 1/3;
+    }
+
+    aside {
+        grid-column: 2/3;
+    }
+
+main.homepage{
+        grid-column: 1/2;
+        grid-template-columns: repeat(3,1fr);
+        grid-column: 1/2;
+        display: grid;
+        grid-gap: 0 1em;
+    }
+
+main.mainstory{
+        grid-column: 1/2;
+        grid-gap: 0 1em;
+}
+
+
+main.photogallery{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    grid-column: 1/4; /* Adjust this value as needed */
+    padding-bottom: calc(120% + 3em);
+    display: grid; /* Add this line to create a grid within main.photogallery */
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns based on your design */
+    grid-gap: 1em; /* Add a gap between the images */
+}
+
+    section.mainstory{
+        grid-column: 2/4;
+        grid-row: 1/3;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.mainstory a {
+        flex: 1 0 10em; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.mainstory a figure {
+        flex: 1 0 10em; 
+    
+    }
+
+    section.mainstory a h3 {
+        flex: 0 0 auto; 
+        margin: 0;
+    }
+
+    section.mainstory a p{
+        flex: 0 0 auto; 
+    }
+
+    section.mainstory a figure img {
+        height:95%;
+        object-fit: cover;
+    }
+    section.article{
+        grid-column:1/3; 
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+
+    body {
+        background-color: rgb(84,84,84);  
+        color: rgb(238, 238, 238);
+    }
+
+    h1 {  
+        background-image: url("tasty bites.svg");  
+        background-repeat: no-repeat;  
+        background-size: contain;  
+        max-width: 10em;
+        }  
+  h1 img {  
+     opacity: 0;
+        }  
+h2{
+    background-color: rgb(84,84,84);  
+    color: rgb(143, 191, 145);
+
+}
+h3 {
+    background-color: rgb(84,84,84);  
+     color: rgb(143, 191, 145);
+        }
+
+div.container {
+    max-width: 80em;
+    margin: 0 auto;
+    background-color:rgb(84,84,84);
+             }
+p{
+    color: rgb(238, 238, 238);
+}
+nav ul {
+    background-color: rgb(84,84,84);  
+    color: rgb(248, 162, 103);
+}
+
+
+li{
+    background-color: rgb(84,84,84);  
+    color: rgb(238, 238, 238);
+}
+
+h4{
+ background-color: rgb(84,84,84);  
+    color: rgb(248, 162, 103);
+}}
