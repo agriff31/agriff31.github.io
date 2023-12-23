@@ -100,6 +100,7 @@ footer{
     font-style:normal; 
     margin-top:2em;
     grid-column: 1/3;
+
 }
 
 footer p{
@@ -118,15 +119,37 @@ a:hover{
 }
 
 
-
-h3 {
-    background-color:rgb(255,247,250);
+h2 {
+     background-color:rgb(255,247,250);
     color: rgb(82,118,83);
     font-family: "fino-sans", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.5rem;
 }
+
+
+
+h3 {
+    background-color:rgb(255,247,250);
+    color: rgb(236,96,1);
+    font-family: "fino-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+
+h4 {
+    font-family:"greycliff-cf", sans-serif;
+    font-weight:500;
+    font-size:1.25em;
+    color: #363537;
+    font-style: normal;
+    margin-right: 1em;
+}
+
+
 
 figcaption {
     font-family: "greycliff-cf", sans-serif;
@@ -146,14 +169,26 @@ section.tertiary {
     border-top: 1px #222 solid;
 }
 
-section.personal-info ul li {
+section.personalinfo ul li {
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 1em;
+    flex: 2 0 15em;
 	
 }
 
-section.personal-info ul li input[type="text"],
+form ul li {
+    font-family:"greycliff-cf", sans-serif;
+    font-weight:500;
+    font-size:1.25em;
+    color: #363537;
+    font-style: normal;
+    margin-right: 1em;
+}
+
+
+
+section.personalinfo ul li input[type="text"],
 section ul li input[type="email"],
 section ul li input[type="tel"],
 section ul li select {
@@ -161,8 +196,8 @@ section ul li select {
 	box-sizing: border-box;
 }
 
-section.personal-info ul li label {
-	flex: 0 0 8em;
+section.personalinfo ul li label {
+	flex: 0 0 3em;
 }
 
 section.order ul, section.method ul {
@@ -185,7 +220,17 @@ textarea {
 	}
 
 
-    
+button {
+    color:#363537;
+    font-family:"greycliff-cf", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 1em; 
+    text-align: left;
+
+}
+
+     
     main.photogallery {
         position:relative;
         overflow:hidden;
@@ -232,7 +277,8 @@ textarea {
         grid-template-columns: repeat(8,1fr);
         grid-gap: 0.2em;
         max-width: 60em; 
-        grid-column: 1/4;
+        grid-column: 1/3;
+        margin-top: 6em;
 
     }
 
@@ -261,6 +307,9 @@ textarea {
 @media only screen and (min-width:60em) {
 	
     div.container{
+        max-width:60em;
+        margin: 0 auto;
+        padding: 1em;
         grid-column:1/2;
         display: grid; 
         grid-template-columns: 3fr 1fr;
@@ -300,6 +349,8 @@ main.photogallery{
     grid-gap: 1em; /* Add a gap between the images */
 }
 
+
+
     section.mainstory{
         grid-column: 2/4;
         grid-row: 1/3;
@@ -334,7 +385,6 @@ main.photogallery{
     section.article{
         grid-column:1/3; 
     }
-}
 
 @media screen and (prefers-color-scheme: dark) {
 
@@ -385,3 +435,5 @@ h4{
  background-color: rgb(84,84,84);  
     color: rgb(248, 162, 103);
 }}
+
+}
